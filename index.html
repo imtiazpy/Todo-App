@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-gray-200">
+        <nav class="container px-16 py-4 flex">
+            <h1 class="text-5xl">Todo</h1>
+            <input id="search-input" class="border border-green-600 ml-auto rounded-lg px-4" type="text" placeholder="Search">
+            <button id="search-btn" class="border border-green-600 rounded-lg px-4 ml-4 text-green-600">Search</button>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-12 px-12 mt-8">
+                <div class="col-span-2">
+                    <div class="flex justify-center">
+                        <input id="task-input" class="border border-green-600 rounded-lg ml-16 px-4 py-4 w-3/4" type="text" placeholder="Search">
+                        <button id="add-btn" class="border border-green-600 rounded-lg px-4 ml-4 text-green-600">Add Task</button>
+                    </div>
+                    <div id="task-list" class="mt-10 flex flex-col justify-center w-3/4 ml-16 px-10 space-y-2">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="grid grid-cols-2">
+                        <div class="col font-black">
+                            <h6>Total task</h6>
+                            <h6>Done</h6>
+                            <h6>Undone</h6>
+                        </div>
+                        <div class="col">
+                            <p id="total-task">0</p>
+                            <p id="done-task">0</p>
+                            <p id="undone-task">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
